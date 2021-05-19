@@ -1,0 +1,126 @@
+
+ <div class="page-header">
+  <div class="row" id="proBanner">
+  </div>
+    <div class="btn-mg">
+
+      <button _ngcontent-gxs-c115="" type="button" class="btn btn-gradient-warning btn-fw btn--" (click)="openMediumModal(mediumModalContentt)">Ajouter demande achat</button>
+     </div>
+</div>
+<div class="row">
+  <div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Liste des demandes</h4>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID demande </th>
+                <th>Demande </th>
+                <th>Etat actuelle</th>
+                <th>Status</th>
+                <th>Telecharger un bon d'achat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Formation</td>
+                <td>DAF</td>
+                <td><label class="badge badge-danger">Pending</label></td>
+                <td><button _ngcontent-gxq-c115="" type="button" class="btn btn-gradient-info btn-icon-text"> Print <i _ngcontent-gxq-c115="" class="mdi mdi-printer btn-icon-append"></i></button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Billetterie et Hôtels </td>
+                <td>Directeur général</td>
+                <td><label class="badge badge-warning">In progress</label></td>
+                <td><button _ngcontent-gxq-c115="" type="button" class="btn btn-gradient-info btn-icon-text"> Print <i _ngcontent-gxq-c115="" class="mdi mdi-printer btn-icon-append"></i></button></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Location de voitures</td>
+                <td>Supérieur hiérarchique</td>
+                <td><label class="badge badge-info">Fixed</label></td>
+                <td><button _ngcontent-gxq-c115="" type="button" class="btn btn-gradient-info btn-icon-text"> Print <i _ngcontent-gxq-c115="" class="mdi mdi-printer btn-icon-append"></i></button></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Parc Informatique</td>
+                <td>responsable d’achat</td>
+                <td><label class="badge badge-success">Completed</label></td>
+                <td><button _ngcontent-gxq-c115="" type="button" class="btn btn-gradient-info btn-icon-text"> Print <i _ngcontent-gxq-c115="" class="mdi mdi-printer btn-icon-append"></i></button></td>
+              </tr>
+             
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <ng-template #mediumModalContentt let-modal class="modal fade" id="exampleModal-1" aria-labelledby="exampleModalLabel-2">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel-2">Ajouter demande achat</h5>
+          <button type="button" class="close" (click)="modal.dismiss()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+           
+           
+            <div class="col-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <form class="forms-sample">
+                    <div class="form-group">
+                      <label for="Lname">Nom</label>
+                      <input type="text" class="form-control" id="Lname" placeholder="Nom">
+                    </div>
+                    <div class="form-group">
+                      <label for="Fname">Prénom</label>
+                      <input type="text" class="form-control" id="Fname" placeholder="prénom">
+                    </div>
+                    <div class="form-group">
+                      <label for="sup">Supérieur hiérarchiquer</label>
+                      <input type="text" class="form-control" id="Sup" placeholder="Supérieur hiérarchique">
+                    </div>
+                    <div class="form-group">
+                      <label for="achats">Famille d'Achats</label>
+                        <select class="form-control" id="achats">
+                          <option>Achats bureautiques divers</option>
+                          <option>Billetterie et Hôtels</option>
+                          <option>Formation</option>
+                          <option>Cartes Carburant</option>
+                          <option>Location de voitures</option>
+                          <option>Parc Automobiles</option>
+                          <option>Parc Informatique</option>
+                          <option>Equipement et Accessoires Radio</option>
+                          <option>Support</option>
+                          <option>Service & Equipement</option>
+                          
+                        </select>
+                      </div>
+                  
+                    <div class="form-group">
+                      <label for="besoin">Description de besoin</label>
+                      <textarea class="form-control" rows="5" id="besoin"></textarea>
+                      
+                    </div>
+                    
+                    
+                  </form>
+                </div>
+              </div>
+            </div>
+         
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" (click)="modal.close()">Submit</button>
+          <button type="button" class="btn btn-light">Cancel</button>
+
+        </div>
+      </div>
+    </ng-template>

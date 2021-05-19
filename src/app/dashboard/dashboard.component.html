@@ -1,0 +1,393 @@
+<div class="row" id="proBanner">
+  
+</div>
+
+
+
+<div class="btn-mg">
+  <button class="btn btn-gradient-warning btn-fw  btn--" (click)="openMediumModal(mediumModalContent)">Ajouter Ressource</button>
+
+ </div>
+  <!-- Modal starts --> 
+        <ng-template #mediumModalContent let-modal class="modal fade" id="exampleModal-2" aria-labelledby="exampleModalLabel-2">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel-2">Ajouter ressources</h5>
+              <button type="button" class="close" (click)="modal.dismiss()" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+               
+               
+                <div class="col-12 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <form class="forms-sample">
+                        <div class="form-group">
+                          <label for="exampleInputName1">Nom</label>
+                          <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputName1">Prénom</label>
+                          <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail3">Date de naissance</label>
+                          <input type="date" class="form-control" id="birthday" placeholder="birth">
+                        </div>
+                        
+                        
+                        <div class="form-group">
+                          <label for="exampleSelectresponsability">Role</label>
+                            <select class="form-control" id="exampleSelectresponsability">
+                              <option>Achats bureautiques divers</option>
+                              <option>Billetterie et Hôtels</option>
+                              <option>Formation</option>
+                              <option>Cartes Carburant</option>
+                              <option>Location de voitures</option>
+                              <option>Parc Automobiles</option>
+                              <option>Parc Informatique</option>
+                              <option>Equipement et Accessoires Radio</option>
+                              <option>Support</option>
+                              <option>Service & Equipement</option>
+                              <option>vide</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="Poste">Poste </label>
+                            <input type="text" class="form-control" id="Poste" placeholder="Poste">
+                          </div>
+                          <div class="form-group">
+                            <label for="Poste">supérieur hiérarchique </label>
+                            <input type="text" class="form-control" id="supérieur hiérarchique" placeholder="supérieur hiérarchique">
+                          </div>
+                          
+                      
+                        
+                        <div class="form-group">
+                          <label for="exampleInputCity1">Email</label>
+                          <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputCity1">username</label>
+                          <input type="username" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="username">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleTextarea1">Mot de passe</label>
+                          <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+                          
+                        </div>
+                        
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                
+              
+             
+              
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" (click)="modal.close()">Submit</button>
+              <button type="button" class="btn btn-light" (click)="modal.close()">Cancel</button>
+            </div>
+          </div>
+        </ng-template>
+        
+        
+          <!-- Modal starts t --> 
+          <ng-template #mediumModalContentt let-modal class="modal fade" id="exampleModal-1" aria-labelledby="exampleModalLabel-2">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel-2">Ajouter demande achat</h5>
+                <button type="button" class="close" (click)="modal.dismiss()" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                 
+                 
+                  <div class="col-12 grid-margin stretch-card">
+                    <div class="card">
+                      <div class="card-body">
+                        <form class="forms-sample">
+                          <div class="form-group">
+                            <label for="Lname">Nom</label>
+                            <input type="text" class="form-control" id="Lname" placeholder="Nom">
+                          </div>
+                          <div class="form-group">
+                            <label for="Fname">Prénom</label>
+                            <input type="text" class="form-control" id="Fname" placeholder="prénom">
+                          </div>
+                          <div class="form-group">
+                            <label for="sup">Supérieur hiérarchiquer</label>
+                            <input type="text" class="form-control" id="Sup" placeholder="Supérieur hiérarchique">
+                          </div>
+                          <div class="form-group">
+                            <label for="achats">Famille d'Achats</label>
+                              <select class="form-control" id="achats">
+                                <option>Achats bureautiques divers</option>
+                                <option>Billetterie et Hôtels</option>
+                                <option>Formation</option>
+                                <option>Cartes Carburant</option>
+                                <option>Location de voitures</option>
+                                <option>Parc Automobiles</option>
+                                <option>Parc Informatique</option>
+                                <option>Equipement et Accessoires Radio</option>
+                                <option>Support</option>
+                                <option>Service & Equipement</option>
+                                
+                              </select>
+                            </div>
+                        
+                          <div class="form-group">
+                            <label for="besoin">Description de besoin</label>
+                            <textarea class="form-control" rows="5" id="besoin"></textarea>
+                            
+                          </div>
+                          
+                          
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+               
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" (click)="modal.close()">Submit</button>
+                <button type="button" class="btn btn-light">Cancel</button>
+   
+              </div>
+            </div>
+          </ng-template>
+<div class="row">
+  <div class="col-12 grid-margin">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Liste utilisateurs</h4>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>
+                  ID
+                </th>
+                <th>
+                  Nom
+                </th>
+                <th>
+               Prénom
+                </th>
+                <th>
+                  Date naissance
+                </th>
+                <th>
+                Role
+                </th>
+                <th>
+                  Poste
+                  </th>
+                <th>
+                  Supérieur hiérarchique</th>
+                <th>
+                email
+                </th>
+                <th>
+               username
+                </th>
+                <th>
+                  password
+                </th>
+                <th>
+                  Actions
+                </th>
+              </tr>
+              
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                 1
+                </td>
+                <td>
+                  <img src="assets/images/faces/face1.jpg" class="mr-2" alt="image">
+                  
+                </td>
+                <td>
+                Walid ben mohamed
+                </td>
+                <td>
+                  22/09/1996
+                </td>
+                <td>
+                developpeur front-end
+                </td>
+                <td>
+                  marketing
+                 </td>
+                <td>
+                  Sana Dali
+                </td>
+                <td>
+                  Sana Dali
+                </td>
+
+                <td>pass</td>
+                  <td>
+                    pass
+                  </td>
+                  <td>  <i _ngcontent-csu-c115="" class="mdi  mdi-pencil text-success"></i>&nbsp;
+                    <i _ngcontent-csu-c115="" class="mdi   mdi-window-close text-danger"></i> </td>
+                    </tr>
+
+
+                     <!--<i _ngcontent-csu-c115="" class="mdi mdi-pencil text-success"></i>&nbsp;
+                <button (click)="openMediumModal(mediumModalContenta)"> <i _ngcontent-csu-c115="" class="mdi mdi-window-close text-danger"></i></button></td>
+                   <ng-template #mediumModalContenta let-modal class="modal fade" id="exampleModal-2" aria-labelledby="exampleModalLabel-2">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel-2">Supprimer utilisateur</h5>
+                        <button type="button" class="close" (click)="modal.dismiss()" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                         
+                         
+                          <div class="col-12 grid-margin stretch-card">
+                            <div class="card">
+                              <div class="card-body">
+                              Voulez vous supprimer l'utilisateur?
+                              </div>
+                            </div>
+                          </div>
+           
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" (click)="modal.close()">Oui</button>
+                        <button type="button" class="btn btn-light" (click)="modal.close()">Non</button>
+                      </div>
+                    </div>
+                  </ng-template>
+              
+                  </tr>!-->
+              <tr>
+                
+                <td>
+                  2
+                </td>
+                <td>
+                  <img src="assets/images/faces/face2.jpg" class="mr-2" alt="image">
+                  
+                </td>
+                <td>
+                  jihen rouatbi
+                </td>
+                <td>
+                  14/02/1994
+                </td>
+                <td>
+                  responsable financiére
+                </td>
+                <td>
+                  responsable financiére
+                </td>
+                <td>
+                  Mehdi Barhoumi
+                </td>
+                <td>
+                  Sana Dali
+                </td>
+                <td>pass</td>
+                  <td> pass </td>
+                    <td><i _ngcontent-csu-c115="" class="mdi  mdi-pencil text-success"></i>&nbsp;
+                      <i _ngcontent-csu-c115="" class="mdi   mdi-window-close text-danger"></i></td>
+              </tr>
+              
+              <tr>
+                <td>
+                  3
+                </td>
+                <td>
+                  <img src="assets/images/faces/face3.jpg" class="mr-2" alt="image">
+                
+                </td>
+                <td>
+                 Yosser Batitta
+                </td>
+                <td>
+                  14/02/1991
+                </td>
+                <td>
+                 marketing
+                </td>
+                <td>
+                  marketing
+                 </td>
+                <td>
+                 Saba Omri
+                </td>
+                <td>
+                  Sana Dali
+                </td>
+                <td>pass</td>
+                <td> pass </td>
+                  <td><i _ngcontent-csu-c115="" class="mdi  mdi-pencil text-success"></i>&nbsp;
+                    <i _ngcontent-csu-c115="" class="mdi   mdi-window-close text-danger"></i></td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-7 grid-margin grid-margin-md-0 stretch-card">
+    <div class="card">
+      <ngb-datepicker #dp [(ngModel)]="date" (navigate)="date = $event.next" class="w-100 border-0"></ngb-datepicker>
+  </div>
+  </div>
+  <div class="col-md-5 stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Todo</h4>
+        <app-todo></app-todo>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <label for="dateOfBirth">Date of birth</label>
+        <div class="input-group">
+          <input id="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #dp="ngbDatepicker">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary calendar" (click)="dp.toggle()" type="button"></button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+  </div>
+</ng-template>
